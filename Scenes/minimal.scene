@@ -36,16 +36,6 @@
           "Scale": "50,50,50",
           "Static": false,
           "Surface": null
-        },
-        {
-          "__version": 0,
-          "__type": "NetworkSystem",
-          "__enabled": true,
-          "PlayerPrefab": "prefabs/playerprefab.prefab",
-          "SpawnPoints": [
-            "788720aa-7feb-4ddf-96b3-785acea0a44f"
-          ],
-          "StartServer": true
         }
       ]
     },
@@ -139,6 +129,51 @@
       "Name": "SpawnPoint",
       "Position": "-130.2083,-4.180099,-12.72563",
       "Enabled": true
+    },
+    {
+      "Id": "aceb2a86-6072-4a16-8298-5315f85662c7",
+      "Name": "Network Manager",
+      "Position": "-10.38902,-17.0892,115.3386",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "NetworkSystem",
+          "__enabled": true,
+          "PlayerPrefab": "prefabs/playerprefab.prefab",
+          "SpawnPoints": [
+            "788720aa-7feb-4ddf-96b3-785acea0a44f"
+          ],
+          "StartServer": true
+        }
+      ]
+    },
+    {
+      "Id": "4389bfae-8ba1-4eda-b185-f672ed24fcf1",
+      "Name": "Camera",
+      "Position": "-10.38902,-17.0892,115.3386",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "CameraComponent",
+          "__enabled": true,
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
     }
   ],
   "SceneProperties": {

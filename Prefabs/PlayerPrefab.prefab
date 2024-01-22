@@ -1,8 +1,7 @@
 {
   "RootObject": {
-    "Id": "de3664c1-fcba-4d7b-af7b-e381a4890c9a",
+    "Id": "01fcb087-ecef-43c9-b2d6-bee5103d1415",
     "Name": "playerprefab",
-    "Position": "0,0,0.839564",
     "Tags": "player",
     "Enabled": true,
     "Components": [
@@ -19,57 +18,18 @@
       },
       {
         "__version": 0,
-        "__type": "PlayerMovment",
+        "__type": "PlayerController",
         "__enabled": true,
-        "AirControl": 0.1,
-        "Body": "71689d04-cd82-4547-9817-7fc3d417d4e4",
-        "CrouchSpeed": 90,
-        "CrouchSpeedCam": 5,
-        "EnableDebug": false,
-        "GroundControl": 4,
-        "Head": "f3adfae1-745c-4f08-9905-e934599d8ac9",
-        "HeadStandUpSize": 17,
-        "JumpForce": 280,
-        "MaxForce": 50,
-        "RotateVelocity": 5,
-        "RunSpeed": 290,
-        "Speed": 160,
-        "TraceCrouchDistance": 30
-      },
-      {
-        "__version": 0,
-        "__type": "CitizenAnimationHelper",
-        "__enabled": true,
-        "BodyWeight": 1,
-        "EyeSource": "f3adfae1-745c-4f08-9905-e934599d8ac9",
-        "EyesWeight": 1,
-        "HeadWeight": 1,
-        "Height": 1,
-        "IkLeftFoot": null,
-        "IkLeftHand": null,
-        "IkRightFoot": null,
-        "IkRightHand": null,
-        "LookAt": null,
-        "LookAtEnabled": false,
-        "Target": "71689d04-cd82-4547-9817-7fc3d417d4e4"
-      },
-      {
-        "__version": 0,
-        "__type": "MyPlayer",
-        "__enabled": true,
-        "Camera": "aca67a1c-7388-42a7-b177-38700179e912",
-        "Pos": "0,0,0"
-      },
-      {
-        "__version": 0,
-        "__type": "PlayerDresser",
-        "__enabled": true,
-        "BodyRenderer": "71689d04-cd82-4547-9817-7fc3d417d4e4"
+        "AnimationHelper": "74aefa00-1259-47ca-b54c-bbb90f04c8f9",
+        "Body": "74aefa00-1259-47ca-b54c-bbb90f04c8f9",
+        "Eye": "ab45c848-2385-42e5-b6ac-a2063e098ac5",
+        "FirstPerson": false,
+        "Gravity": "0,0,800"
       }
     ],
     "Children": [
       {
-        "Id": "71689d04-cd82-4547-9817-7fc3d417d4e4",
+        "Id": "74aefa00-1259-47ca-b54c-bbb90f04c8f9",
         "Name": "Body",
         "Enabled": true,
         "Components": [
@@ -96,17 +56,40 @@
             "Start": "1,0,0",
             "Static": false,
             "Surface": null
+          },
+          {
+            "__version": 0,
+            "__type": "CitizenAnimationHelper",
+            "__enabled": true,
+            "BodyWeight": 1,
+            "EyeSource": "ab45c848-2385-42e5-b6ac-a2063e098ac5",
+            "EyesWeight": 1,
+            "HeadWeight": 1,
+            "Height": 1,
+            "IkLeftFoot": null,
+            "IkLeftHand": null,
+            "IkRightFoot": null,
+            "IkRightHand": null,
+            "LookAt": null,
+            "LookAtEnabled": false,
+            "Target": "74aefa00-1259-47ca-b54c-bbb90f04c8f9"
+          },
+          {
+            "__version": 0,
+            "__type": "PlayerDresser",
+            "__enabled": true,
+            "BodyRenderer": "74aefa00-1259-47ca-b54c-bbb90f04c8f9"
           }
         ]
       },
       {
-        "Id": "f3adfae1-745c-4f08-9905-e934599d8ac9",
+        "Id": "ab45c848-2385-42e5-b6ac-a2063e098ac5",
         "Name": "Head",
         "Position": "0,0,65",
         "Enabled": true
       },
       {
-        "Id": "aca67a1c-7388-42a7-b177-38700179e912",
+        "Id": "22b7f518-7af7-45a7-9b5e-d6c1f0d03e3b",
         "Name": "Camera",
         "Position": "-78.13908,0,62.60089",
         "Components": [
@@ -132,12 +115,12 @@
             "__version": 0,
             "__type": "CameraMovment",
             "__enabled": true,
-            "Body": "71689d04-cd82-4547-9817-7fc3d417d4e4",
+            "Body": "74aefa00-1259-47ca-b54c-bbb90f04c8f9",
             "Distance": 120,
-            "Head": "f3adfae1-745c-4f08-9905-e934599d8ac9",
+            "Head": "ab45c848-2385-42e5-b6ac-a2063e098ac5",
             "MouseXSens": 0.1,
             "MouseYSens": 0.1,
-            "Player": "de3664c1-fcba-4d7b-af7b-e381a4890c9a"
+            "Player": "01fcb087-ecef-43c9-b2d6-bee5103d1415"
           }
         ]
       }

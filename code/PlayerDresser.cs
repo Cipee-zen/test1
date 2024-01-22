@@ -1,5 +1,9 @@
 using Sandbox;
+using Sandbox.Citizen;
+using System.Linq;
 
+[Group( "Walker" )]
+[Title( "Walker - Player Dresser" )]
 public sealed class PlayerDresser : Component, Component.INetworkSpawn
 {
 	[Property]
@@ -7,7 +11,6 @@ public sealed class PlayerDresser : Component, Component.INetworkSpawn
 
 	public void OnNetworkSpawn( Connection owner )
 	{
-		Log.Info("cadadada");
 		var clothing = new ClothingContainer();
 		clothing.Deserialize( owner.GetUserData( "avatar" ) );
 		clothing.Apply( BodyRenderer );
