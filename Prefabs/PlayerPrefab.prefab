@@ -1,35 +1,35 @@
 {
   "RootObject": {
-    "Id": "01fcb087-ecef-43c9-b2d6-bee5103d1415",
+    "Id": "dedfa6d5-740d-45da-a69f-74d5d2180bf7",
     "Name": "playerprefab",
     "Tags": "player",
     "Enabled": true,
     "Components": [
       {
         "__version": 0,
+        "__type": "PlayerController",
+        "__enabled": true,
+        "AnimationHelper": "14f18202-776f-4eea-9591-d036009594b7",
+        "Body": "14f18202-776f-4eea-9591-d036009594b7",
+        "Eye": "92153d0d-78f7-41de-b2d8-76a612e99587",
+        "FirstPerson": false,
+        "Gravity": "0,0,800"
+      },
+      {
+        "__version": 0,
         "__type": "CharacterController",
         "__enabled": true,
         "Acceleration": 10,
         "GroundAngle": 45,
-        "Height": 71.5,
+        "Height": 64,
         "IgnoreLayers": "player",
-        "Radius": 8.8,
+        "Radius": 16,
         "StepHeight": 18
-      },
-      {
-        "__version": 0,
-        "__type": "PlayerController",
-        "__enabled": true,
-        "AnimationHelper": "74aefa00-1259-47ca-b54c-bbb90f04c8f9",
-        "Body": "74aefa00-1259-47ca-b54c-bbb90f04c8f9",
-        "Eye": "ab45c848-2385-42e5-b6ac-a2063e098ac5",
-        "FirstPerson": false,
-        "Gravity": "0,0,800"
       }
     ],
     "Children": [
       {
-        "Id": "74aefa00-1259-47ca-b54c-bbb90f04c8f9",
+        "Id": "14f18202-776f-4eea-9591-d036009594b7",
         "Name": "Body",
         "Enabled": true,
         "Components": [
@@ -62,7 +62,7 @@
             "__type": "CitizenAnimationHelper",
             "__enabled": true,
             "BodyWeight": 1,
-            "EyeSource": "ab45c848-2385-42e5-b6ac-a2063e098ac5",
+            "EyeSource": "92153d0d-78f7-41de-b2d8-76a612e99587",
             "EyesWeight": 1,
             "HeadWeight": 1,
             "Height": 1,
@@ -72,57 +72,21 @@
             "IkRightHand": null,
             "LookAt": null,
             "LookAtEnabled": false,
-            "Target": "74aefa00-1259-47ca-b54c-bbb90f04c8f9"
+            "Target": "14f18202-776f-4eea-9591-d036009594b7"
           },
           {
             "__version": 0,
             "__type": "PlayerDresser",
             "__enabled": true,
-            "BodyRenderer": "74aefa00-1259-47ca-b54c-bbb90f04c8f9"
+            "BodyRenderer": "14f18202-776f-4eea-9591-d036009594b7"
           }
         ]
       },
       {
-        "Id": "ab45c848-2385-42e5-b6ac-a2063e098ac5",
+        "Id": "92153d0d-78f7-41de-b2d8-76a612e99587",
         "Name": "Head",
         "Position": "0,0,65",
         "Enabled": true
-      },
-      {
-        "Id": "22b7f518-7af7-45a7-9b5e-d6c1f0d03e3b",
-        "Name": "Camera",
-        "Position": "-78.13908,0,62.60089",
-        "Components": [
-          {
-            "__version": 0,
-            "__type": "CameraComponent",
-            "__enabled": true,
-            "BackgroundColor": "0.33333,0.46275,0.52157,1",
-            "ClearFlags": "All",
-            "FieldOfView": 80,
-            "IsMainCamera": true,
-            "Orthographic": false,
-            "OrthographicHeight": 1204,
-            "Priority": 1,
-            "RenderExcludeTags": "",
-            "RenderTags": "",
-            "TargetEye": "None",
-            "Viewport": "0,0,1,1",
-            "ZFar": 10000,
-            "ZNear": 10
-          },
-          {
-            "__version": 0,
-            "__type": "CameraMovment",
-            "__enabled": true,
-            "Body": "74aefa00-1259-47ca-b54c-bbb90f04c8f9",
-            "Distance": 120,
-            "Head": "ab45c848-2385-42e5-b6ac-a2063e098ac5",
-            "MouseXSens": 0.1,
-            "MouseYSens": 0.1,
-            "Player": "01fcb087-ecef-43c9-b2d6-bee5103d1415"
-          }
-        ]
       }
     ]
   },
