@@ -51,16 +51,16 @@ public class PlayerController : Component
 
 			var lookDir = EyeAngles.ToRotation();
 
-			if ( FirstPerson )
-			{
-				cam.Transform.Position = Eye.Transform.Position;
-				cam.Transform.Rotation = lookDir;
-			}
-			else
-			{
-				cam.Transform.Position = Transform.Position + lookDir.Backward * 300 + Vector3.Up * 75.0f;
-				cam.Transform.Rotation = lookDir;
-			}
+			// if ( FirstPerson )
+			// {
+			// 	cam.Transform.Position = Eye.Transform.Position;
+			// 	cam.Transform.Rotation = lookDir;
+			// }
+			// else
+			// {
+			// 	cam.Transform.Position = (Transform.Position) + lookDir.Backward * 300f + Vector3.Up * 75.0f;
+			// 	cam.Transform.Rotation = lookDir;
+			// }
 
 
 
