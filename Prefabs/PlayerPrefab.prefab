@@ -1,0 +1,150 @@
+{
+  "RootObject": {
+    "Id": "de3664c1-fcba-4d7b-af7b-e381a4890c9a",
+    "Name": "playerprefab",
+    "Position": "0,0,0.839564",
+    "Tags": "player",
+    "Enabled": true,
+    "Components": [
+      {
+        "__version": 0,
+        "__type": "CharacterController",
+        "__enabled": true,
+        "Acceleration": 10,
+        "GroundAngle": 45,
+        "Height": 71.5,
+        "IgnoreLayers": "player",
+        "Radius": 8.8,
+        "StepHeight": 18
+      },
+      {
+        "__version": 0,
+        "__type": "PlayerMovment",
+        "__enabled": true,
+        "AirControl": 0.1,
+        "Body": "71689d04-cd82-4547-9817-7fc3d417d4e4",
+        "CrouchSpeed": 90,
+        "CrouchSpeedCam": 5,
+        "EnableDebug": false,
+        "GroundControl": 4,
+        "Head": "f3adfae1-745c-4f08-9905-e934599d8ac9",
+        "HeadStandUpSize": 17,
+        "JumpForce": 280,
+        "MaxForce": 50,
+        "RotateVelocity": 5,
+        "RunSpeed": 290,
+        "Speed": 160,
+        "TraceCrouchDistance": 30
+      },
+      {
+        "__version": 0,
+        "__type": "CitizenAnimationHelper",
+        "__enabled": true,
+        "BodyWeight": 1,
+        "EyeSource": "f3adfae1-745c-4f08-9905-e934599d8ac9",
+        "EyesWeight": 1,
+        "HeadWeight": 1,
+        "Height": 1,
+        "IkLeftFoot": null,
+        "IkLeftHand": null,
+        "IkRightFoot": null,
+        "IkRightHand": null,
+        "LookAt": null,
+        "LookAtEnabled": false,
+        "Target": "71689d04-cd82-4547-9817-7fc3d417d4e4"
+      },
+      {
+        "__version": 0,
+        "__type": "MyPlayer",
+        "__enabled": true,
+        "Camera": "aca67a1c-7388-42a7-b177-38700179e912",
+        "Pos": "0,0,0"
+      },
+      {
+        "__version": 0,
+        "__type": "PlayerDresser",
+        "__enabled": true,
+        "BodyRenderer": "71689d04-cd82-4547-9817-7fc3d417d4e4"
+      }
+    ],
+    "Children": [
+      {
+        "Id": "71689d04-cd82-4547-9817-7fc3d417d4e4",
+        "Name": "Body",
+        "Enabled": true,
+        "Components": [
+          {
+            "__version": 0,
+            "__type": "SkinnedModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 341,
+            "BoneMergeTarget": null,
+            "CreateBoneObjects": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/citizen/citizen.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          },
+          {
+            "__version": 0,
+            "__type": "CapsuleCollider",
+            "__enabled": true,
+            "End": "1,0,63",
+            "IsTrigger": false,
+            "Radius": 7.799998,
+            "Start": "1,0,0",
+            "Static": false,
+            "Surface": null
+          }
+        ]
+      },
+      {
+        "Id": "f3adfae1-745c-4f08-9905-e934599d8ac9",
+        "Name": "Head",
+        "Position": "0,0,65",
+        "Enabled": true
+      },
+      {
+        "Id": "aca67a1c-7388-42a7-b177-38700179e912",
+        "Name": "Camera",
+        "Position": "-78.13908,0,62.60089",
+        "Components": [
+          {
+            "__version": 0,
+            "__type": "CameraComponent",
+            "__enabled": true,
+            "BackgroundColor": "0.33333,0.46275,0.52157,1",
+            "ClearFlags": "All",
+            "FieldOfView": 80,
+            "IsMainCamera": true,
+            "Orthographic": false,
+            "OrthographicHeight": 1204,
+            "Priority": 1,
+            "RenderExcludeTags": "",
+            "RenderTags": "",
+            "TargetEye": "None",
+            "Viewport": "0,0,1,1",
+            "ZFar": 10000,
+            "ZNear": 10
+          },
+          {
+            "__version": 0,
+            "__type": "CameraMovment",
+            "__enabled": true,
+            "Body": "71689d04-cd82-4547-9817-7fc3d417d4e4",
+            "Distance": 120,
+            "Head": "f3adfae1-745c-4f08-9905-e934599d8ac9",
+            "MouseXSens": 0.1,
+            "MouseYSens": 0.1,
+            "Player": "de3664c1-fcba-4d7b-af7b-e381a4890c9a"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
